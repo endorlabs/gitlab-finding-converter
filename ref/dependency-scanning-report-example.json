@@ -94,11 +94,11 @@
       {
         "fixes": [
           {
-            "id": "5d681b13-e8fa-4668-957e-8d88f932ddc7",
+            "id": "5d681b13-e8fa-4668-957e-8d88f932ddc7"
           }
         ],
         "summary": "Upgrade saml2-js",
-        "diff": "ZGlmZiAtLWdpdCBhL...OR0d1ZUc2THh3UT09Cg==" // some content is omitted for brevity
+        "diff": "ZGlmZiAtLWdpdCBhL...OR0d1ZUc2THh3UT09Cg==" 
       }
     ]
   }
