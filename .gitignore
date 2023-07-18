@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,VisualStudioCode,json
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,VisualStudioCode,json
 
-#!! ERROR: json is undefined. Use list command to see defined gitignore types !!#
-
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -194,4 +192,5 @@ pyrightconfig.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/python,VisualStudioCode,json
+### JSON files
+*.json
