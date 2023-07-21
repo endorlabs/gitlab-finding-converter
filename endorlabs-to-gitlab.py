@@ -100,7 +100,7 @@ def parse_findings_for_context(findings, context='all_findings'):
                     'value': xkey,
                     'url': f"https://nvd.nist.gov/vuln/detail/{xkey}"
                 }
-            elif xkey.index('://') > -1:
+            elif xkey.find('://') > -1:
                 if xkey.startswith('https://'):
                     xtra_id = {
                         'type': 'web',
