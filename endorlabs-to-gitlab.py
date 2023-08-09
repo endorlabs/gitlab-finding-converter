@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json as jsonlib
-import sys, os, re, argparse
+import sys, os, re, argparse, datetime
 
 # try:
 #     from rich import print
@@ -122,7 +122,20 @@ def parse_findings_for_context(findings, context='all_findings'):
     return gitlab_findings
 
 def gitlab_doc(parsed_findings):
-    return { 'version': '2.0', 'vulnerabilites': parsed_findings }
+    
+    return {
+        'version': '0.0.0',
+        'dependency_files': [],
+        'scan': {
+            'analyzer': {'id': 'endor-finding-converter', 'name': 'endorctl', 'version': '0.2', 'vendor': {'name': 'Endor Labs'}},
+            'scanner': {'id': 'endorctl-0.0.0', 'name': 'endorctl', 'version': '0.0.0', 'vendor': {'name': 'Endor Labs'}}, 
+            'start_time': datetime.datetime.now().isoformat().split('.', 2)[0],
+            'end_time': datetime.datetime.now().isoformat().split('.', 2)[0], 
+            'status': 'success', 
+            'type': 'dependency_scanning'
+        }, 
+        'vulnerabilities': parsed_findings
+    }
     # TODO add remedaitions?
 
 if __name__ == '__main__':

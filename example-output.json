@@ -1,8 +1,31 @@
 {
-   "version": "2.0",
-   "vulnerabilites": [
+   "version": "0.0.0",
+   "dependency_files": [],
+   "scan": {
+      "analyzer": {
+         "id": "endor-finding-converter",
+         "name": "endorctl",
+         "version": "0.2",
+         "vendor": {
+            "name": "Endor Labs"
+         }
+      },
+      "scanner": {
+         "id": "endorctl-0.0.0",
+         "name": "endorctl",
+         "version": "0.0.0",
+         "vendor": {
+            "name": "Endor Labs"
+         }
+      },
+      "start_time": "2023-08-09T11:49:31",
+      "end_time": "2023-08-09T11:49:31",
+      "status": "success",
+      "type": "dependency_scanning"
+   },
+   "vulnerabilities": [
       {
-         "id": "64b714694f948c871663d523",
+         "id": "64d3defd993a0866e307d698",
          "category": "dependency_scanning",
          "name": "GHSA-q485-j897-qc27: XML External Entity Reference in mchange:c3p0",
          "description": "com.mchange:c3p0@0.9.5.2 has a critical vulnerability identified by GHSA-q485-j897-qc27: XML External Entity Reference in mchange:c3p0. No vulnerable function is known to be reachable. There is no known fix for this vulnerability at this time.\ncom.mchange:c3p0@0.9.5.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -24,9 +47,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b714694f948c871663d523",
-               "value": "64b714694f948c871663d523",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b714694f948c871663d523"
+               "name": "EndorLabs-64d3defd993a0866e307d698",
+               "value": "64d3defd993a0866e307d698",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defd993a0866e307d698"
             },
             {
                "type": "ghsa",
@@ -60,144 +83,7 @@
          ]
       },
       {
-         "id": "64b71469ddd812fb9482c9c8",
-         "category": "dependency_scanning",
-         "name": "GHSA-84p2-vf58-xhxv: Billion laughs attack in c3p0",
-         "description": "com.mchange:c3p0@0.9.5.2 has a high severity vulnerability identified by GHSA-84p2-vf58-xhxv: Billion laughs attack in c3p0. No vulnerable function is known to be reachable. This vulnerability was fixed in version 0.9.5.4.\ncom.mchange:c3p0@0.9.5.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "High",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use com.mchange:c3p0 version 0.9.5.4 (current: 0.9.5.2, latest: 0.9.5.5).",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "com.mchange:c3p0"
-               },
-               "version": "0.9.5.2"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b71469ddd812fb9482c9c8",
-               "value": "64b71469ddd812fb9482c9c8",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469ddd812fb9482c9c8"
-            },
-            {
-               "type": "ghsa",
-               "name": "GHSA-84p2-vf58-xhxv",
-               "value": "GHSA-84p2-vf58-xhxv",
-               "url": "https://github.com/advisories/GHSA-84p2-vf58-xhxv"
-            }
-         ],
-         "links": [
-            {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-5427"
-            },
-            {
-               "url": "https://hackerone.com/reports/509315"
-            },
-            {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BFIVX6HOVNLAM7W3SUAMHYRNLCVQSAWR/"
-            },
-            {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MQ47OFV57Y2DAHMGA5H3JOL4WHRWRFN4/"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuapr2020.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpujan2021.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpujul2020.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuoct2020.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
-            }
-         ]
-      },
-      {
-         "id": "64b71469c98f6e1860dcdb35",
-         "category": "dependency_scanning",
-         "name": "GHSA-599f-7c49-w659: Arbitrary code execution in Apache Commons Text",
-         "description": "org.apache.commons:commons-text@1.9 has a critical vulnerability identified by GHSA-599f-7c49-w659: Arbitrary code execution in Apache Commons Text. A vulnerable function is potentially reachable. This vulnerability was fixed in version 1.10.0.\norg.apache.commons:commons-text@1.9 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Critical",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.commons:commons-text version 1.10.0 (current: 1.9, latest: 1.10.0).",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "org.apache.commons:commons-text"
-               },
-               "version": "1.9"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b71469c98f6e1860dcdb35",
-               "value": "64b71469c98f6e1860dcdb35",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469c98f6e1860dcdb35"
-            },
-            {
-               "type": "ghsa",
-               "name": "GHSA-599f-7c49-w659",
-               "value": "GHSA-599f-7c49-w659",
-               "url": "https://github.com/advisories/GHSA-599f-7c49-w659"
-            }
-         ],
-         "links": [
-            {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42889"
-            },
-            {
-               "url": "https://arxiv.org/pdf/2306.05534"
-            },
-            {
-               "url": "https://github.com/apache/commons-text"
-            },
-            {
-               "url": "https://lists.apache.org/thread/n2bd4vdsgkqh2tm14l1wyc3jyol7s1om"
-            },
-            {
-               "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0022"
-            },
-            {
-               "url": "https://security.gentoo.org/glsa/202301-05"
-            },
-            {
-               "url": "https://security.netapp.com/advisory/ntap-20221020-0004/"
-            },
-            {
-               "url": "https://securitylab.github.com/advisories/GHSL-2022-018_Apache_Commons_Text"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/171003/OX-App-Suite-Cross-Site-Scripting-Server-Side-Request-Forgery.html"
-            },
-            {
-               "url": "http://seclists.org/fulldisclosure/2023/Feb/3"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2022/10/13/4"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2022/10/18/1"
-            }
-         ]
-      },
-      {
-         "id": "64b71469ddd812fb9482c9ca",
+         "id": "64d3defd7a977a2134b62800",
          "category": "dependency_scanning",
          "name": "GHSA-w77p-8cfg-2x43: Improper Access Control in SLF4J",
          "description": "org.slf4j:slf4j-ext@1.7.2 has a critical vulnerability identified by GHSA-w77p-8cfg-2x43: Improper Access Control in SLF4J. No vulnerable function is known to be reachable. This vulnerability was fixed in version 1.7.26.\norg.slf4j:slf4j-ext@1.7.2 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
@@ -219,9 +105,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469ddd812fb9482c9ca",
-               "value": "64b71469ddd812fb9482c9ca",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469ddd812fb9482c9ca"
+               "name": "EndorLabs-64d3defd7a977a2134b62800",
+               "value": "64d3defd7a977a2134b62800",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defd7a977a2134b62800"
             },
             {
                "type": "ghsa",
@@ -414,58 +300,12 @@
          ]
       },
       {
-         "id": "64b71469f63083e7bf3009f7",
-         "category": "dependency_scanning",
-         "name": "GHSA-w6f2-8wx4-47r5: Incorrect Authorization in MySQL Connector Java",
-         "description": "mysql:mysql-connector-java@5.1.42 has a medium severity vulnerability identified by GHSA-w6f2-8wx4-47r5: Incorrect Authorization in MySQL Connector Java. No vulnerable function is known to be reachable. There is no known fix for this vulnerability at this time.\nmysql:mysql-connector-java@5.1.42 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Medium",
-         "solution": "No patch upgrades available to fix the issue. Check the security advisory for alternative controls or actions.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "mysql:mysql-connector-java"
-               },
-               "version": "5.1.42"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b71469f63083e7bf3009f7",
-               "value": "64b71469f63083e7bf3009f7",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469f63083e7bf3009f7"
-            },
-            {
-               "type": "ghsa",
-               "name": "GHSA-w6f2-8wx4-47r5",
-               "value": "GHSA-w6f2-8wx4-47r5",
-               "url": "https://github.com/advisories/GHSA-w6f2-8wx4-47r5"
-            }
-         ],
-         "links": [
-            {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-2471"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
-            }
-         ]
-      },
-      {
-         "id": "64b714690e3bce535810286b",
+         "id": "64d3defdf1fbc97820d1679b",
          "category": "dependency_scanning",
          "name": "GHSA-jcq3-cprp-m333: Privilege escalation in mysql-connector-jav",
          "description": "mysql:mysql-connector-java@5.1.42 has a medium severity vulnerability identified by GHSA-jcq3-cprp-m333: Privilege escalation in mysql-connector-jav. No vulnerable function is known to be reachable. This vulnerability was fixed in version 8.0.16.\nmysql:mysql-connector-java@5.1.42 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "severity": "Medium",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use mysql:mysql-connector-java version 8.0.16 (current: 5.1.42, latest: 8.0.32).",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use mysql:mysql-connector-java version 8.0.16 (current: 5.1.42, latest: 8.0.33).",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -482,9 +322,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b714690e3bce535810286b",
-               "value": "64b714690e3bce535810286b",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b714690e3bce535810286b"
+               "name": "EndorLabs-64d3defdf1fbc97820d1679b",
+               "value": "64d3defdf1fbc97820d1679b",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defdf1fbc97820d1679b"
             },
             {
                "type": "ghsa",
@@ -512,12 +352,12 @@
          ]
       },
       {
-         "id": "64b71469a49d5e7c6a41aba4",
+         "id": "64d3defd8046d391c0e3ec8d",
          "category": "dependency_scanning",
-         "name": "GHSA-mvr2-9pj6-7w5j: Denial of Service in Google Guava",
-         "description": "com.google.guava:guava@13.0.1 has a medium severity vulnerability identified by GHSA-mvr2-9pj6-7w5j: Denial of Service in Google Guava. No vulnerable function is known to be reachable. This vulnerability was fixed in version 24.1.1-android.\ncom.google.guava:guava@13.0.1 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
+         "name": "GHSA-w6f2-8wx4-47r5: Incorrect Authorization in MySQL Connector Java",
+         "description": "mysql:mysql-connector-java@5.1.42 has a medium severity vulnerability identified by GHSA-w6f2-8wx4-47r5: Incorrect Authorization in MySQL Connector Java. No vulnerable function is known to be reachable. There is no known fix for this vulnerability at this time.\nmysql:mysql-connector-java@5.1.42 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "severity": "Medium",
-         "solution": "No newer versions of org.jboss.weld:weld-core (current: 1.1.33.Final, latest: 3.0.0.Alpha6) require com.google.guava:guava 24.1.1-android or higher. Consider other options to upgrade com.google.guava:guava to 24.1.1-android (current: 13.0.1, latest: 32.1.1-jre).",
+         "solution": "No patch upgrades available to fix the issue. Check the security advisory for alternative controls or actions.",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -526,175 +366,83 @@
             "file": "pom.xml",
             "dependency": {
                "package": {
-                  "name": "com.google.guava:guava"
+                  "name": "mysql:mysql-connector-java"
                },
-               "version": "13.0.1"
+               "version": "5.1.42"
             }
          },
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469a49d5e7c6a41aba4",
-               "value": "64b71469a49d5e7c6a41aba4",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469a49d5e7c6a41aba4"
+               "name": "EndorLabs-64d3defd8046d391c0e3ec8d",
+               "value": "64d3defd8046d391c0e3ec8d",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defd8046d391c0e3ec8d"
             },
             {
                "type": "ghsa",
-               "name": "GHSA-mvr2-9pj6-7w5j",
-               "value": "GHSA-mvr2-9pj6-7w5j",
-               "url": "https://github.com/advisories/GHSA-mvr2-9pj6-7w5j"
+               "name": "GHSA-w6f2-8wx4-47r5",
+               "value": "GHSA-w6f2-8wx4-47r5",
+               "url": "https://github.com/advisories/GHSA-w6f2-8wx4-47r5"
             }
          ],
          "links": [
             {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-10237"
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-2471"
             },
             {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2423"
+               "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
             },
             {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2424"
+               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+            }
+         ]
+      },
+      {
+         "id": "64d3defde3ec58e6eade57f7",
+         "category": "dependency_scanning",
+         "name": "GHSA-84p2-vf58-xhxv: Billion laughs attack in c3p0",
+         "description": "com.mchange:c3p0@0.9.5.2 has a high severity vulnerability identified by GHSA-84p2-vf58-xhxv: Billion laughs attack in c3p0. No vulnerable function is known to be reachable. This vulnerability was fixed in version 0.9.5.4.\ncom.mchange:c3p0@0.9.5.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "High",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use com.mchange:c3p0 version 0.9.5.4 (current: 0.9.5.2, latest: 0.9.5.5).",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "com.mchange:c3p0"
+               },
+               "version": "0.9.5.2"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3defde3ec58e6eade57f7",
+               "value": "64d3defde3ec58e6eade57f7",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defde3ec58e6eade57f7"
             },
             {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2425"
+               "type": "ghsa",
+               "name": "GHSA-84p2-vf58-xhxv",
+               "value": "GHSA-84p2-vf58-xhxv",
+               "url": "https://github.com/advisories/GHSA-84p2-vf58-xhxv"
+            }
+         ],
+         "links": [
+            {
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-5427"
             },
             {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2428"
+               "url": "https://hackerone.com/reports/509315"
             },
             {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2598"
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BFIVX6HOVNLAM7W3SUAMHYRNLCVQSAWR/"
             },
             {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2643"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2740"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2741"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2742"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2743"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2018:2927"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2019:2858"
-            },
-            {
-               "url": "https://access.redhat.com/errata/RHSA-2019:3149"
-            },
-            {
-               "url": "https://github.com/google/guava/wiki/CVE-2018-10237"
-            },
-            {
-               "url": "https://groups.google.com/d/topic/guava-announce/xqWALw4W1vs/discussion"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/053d9ce4d579b02203db18545fee5e33f35f2932885459b74d1e4272@%3Cissues.activemq.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/19fa48533bc7ea1accf6b12746a74ed888ae6e49a5cf81ae4f807495@%3Ccommon-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/33c6bccfeb7adf644d4d79894ca8f09370be6ed4b20632c2e228d085@%3Ccommits.cassandra.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/3d5dbdd92ac9ceaef90e40f78599f9109f2f345252e0ac9d98e7e084@%3Cgitbox.activemq.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/3ddd79c801edd99c0978e83dbe2168ebd36fd42acfa5dac38fb03dd6@%3Cissues.activemq.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/cc48fe770c45a74dc3b37ed0817393e0c96701fc49bc431ed922f3cc@%3Chdfs-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc@%3Cissues.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/ff8dcfe29377088ab655fda9d585dccd5b1f07fabd94ae84fd60a7f8@%3Ccommits.pulsar.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cdev.flink.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cuser.flink.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r223bc776a077d0795786c38cbc6e7dd808fce1a9161b00ba9c0a5d55@%3Cissues.lucene.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r22c8173b804cd4a420c43064ba4e363d0022aa421008b1989f7354d4@%3Cissues.flink.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r27eb79a87a760335226dbfa6a7b7bffea539a535f8e80c41e482106d@%3Cdev.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r2ea4e5e5aa8ad73b001a466c582899620961f47d77a40af712c1fdf9@%3Cdev.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r30e7d7b6bfa630dacc41649a0e96dad75165d50474c1241068aa0f94@%3Cissues.storm.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r352e40ca9874d1beb4ad95403792adca7eb295e6bc3bd7b65fabcc21@%3Ccommits.samza.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r38e2ab87528d3c904e7fac496e8fd766b9277656ff95b97d6b6b6dcd@%3Cdev.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748@%3Ccommits.pulsar.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r43491b25b2e5c368c34b106a82eff910a5cea3e90de82ad75cc16540@%3Cdev.syncope.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r50fc0bcc734dd82e691d36d209258683141bfc0083739a77e56ad92d@%3Cdev.flink.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba@%3Cissues.maven.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r95799427b335807a4c54776908125c3e66597b65845ae50096d9278a@%3Cdev.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/ra0adb9653c7de9539b93cc8434143b655f753b9f60580ff260becb2b@%3Cusers.kafka.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/ra4f44016926dcb034b3b230280a18102062f94ae55b8a31bb92fed84@%3Cissues.lucene.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/ra8906723927aef2a599398c238eacfc845b74d812e0093ec2fc70a7d@%3Cissues.flink.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rb3da574c34bc6bd37972d2266af3093b90d7e437460423c24f477919@%3Cissues.lucene.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rc78f6e84f82cc662860e96526d8ab969f34dbe12dc560e22d9d147a3@%3Cdev.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rc8467f357b943ceaa86f289f8bc1a5d1c7955b75d3bac1426f2d4ac1@%3Ccommon-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95@%3Cgithub.arrow.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd0c8ec6e044aa2958dd0549ebf8ecead7f5968c9474ba73a504161b2@%3Cdev.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rdc56c15693c236e31e1e95f847b8e5e74fc0a05741d47488e7fc8c45@%3Cissues.flink.apache.org%3E"
-            },
-            {
-               "url": "https://security.netapp.com/advisory/ntap-20220629-0008/"
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MQ47OFV57Y2DAHMGA5H3JOL4WHRWRFN4/"
             },
             {
                "url": "https://www.oracle.com/security-alerts/cpuapr2020.html"
@@ -706,20 +454,20 @@
                "url": "https://www.oracle.com/security-alerts/cpujul2020.html"
             },
             {
-               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+               "url": "https://www.oracle.com/security-alerts/cpuoct2020.html"
             },
             {
-               "url": "http://www.securitytracker.com/id/1041707"
+               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
             }
          ]
       },
       {
-         "id": "64b71469f63083e7bf3009f8",
+         "id": "64d3defd8046d391c0e3ec95",
          "category": "dependency_scanning",
-         "name": "GHSA-7g45-4rm6-3mm3: Guava vulnerable to insecure use of temporary directory",
-         "description": "com.google.guava:guava@13.0.1 has a medium severity vulnerability identified by GHSA-7g45-4rm6-3mm3: Guava vulnerable to insecure use of temporary directory. A vulnerable function is potentially reachable. This vulnerability was fixed in version 32.0.0-android.\ncom.google.guava:guava@13.0.1 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
-         "severity": "Medium",
-         "solution": "No newer versions of org.jboss.weld:weld-core (current: 1.1.33.Final, latest: 3.0.0.Alpha6) require com.google.guava:guava 32.0.0-android or higher. Consider other options to upgrade com.google.guava:guava to 32.0.0-android (current: 13.0.1, latest: 32.1.1-jre).",
+         "name": "GHSA-599f-7c49-w659: Arbitrary code execution in Apache Commons Text",
+         "description": "org.apache.commons:commons-text@1.9 has a critical vulnerability identified by GHSA-599f-7c49-w659: Arbitrary code execution in Apache Commons Text. A vulnerable function is reachable. This vulnerability was fixed in version 1.10.0.\norg.apache.commons:commons-text@1.9 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Critical",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.commons:commons-text version 1.10.0 (current: 1.9, latest: 1.10.0).",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -728,327 +476,68 @@
             "file": "pom.xml",
             "dependency": {
                "package": {
-                  "name": "com.google.guava:guava"
+                  "name": "org.apache.commons:commons-text"
                },
-               "version": "13.0.1"
+               "version": "1.9"
             }
          },
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469f63083e7bf3009f8",
-               "value": "64b71469f63083e7bf3009f8",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469f63083e7bf3009f8"
+               "name": "EndorLabs-64d3defd8046d391c0e3ec95",
+               "value": "64d3defd8046d391c0e3ec95",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defd8046d391c0e3ec95"
             },
             {
                "type": "ghsa",
-               "name": "GHSA-7g45-4rm6-3mm3",
-               "value": "GHSA-7g45-4rm6-3mm3",
-               "url": "https://github.com/advisories/GHSA-7g45-4rm6-3mm3"
+               "name": "GHSA-599f-7c49-w659",
+               "value": "GHSA-599f-7c49-w659",
+               "url": "https://github.com/advisories/GHSA-599f-7c49-w659"
             }
          ],
          "links": [
             {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-2976"
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42889"
             },
             {
-               "url": "https://github.com/google/guava/issues/2575"
+               "url": "https://arxiv.org/pdf/2306.05534"
             },
             {
-               "url": "https://github.com/google/guava/issues/6532"
+               "url": "https://github.com/apache/commons-text"
             },
             {
-               "url": "https://github.com/google/guava/commit/feb83a1c8fd2e7670b244d5afd23cba5aca43284"
+               "url": "https://lists.apache.org/thread/n2bd4vdsgkqh2tm14l1wyc3jyol7s1om"
             },
             {
-               "url": "https://github.com/google/guava"
+               "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2022-0022"
             },
             {
-               "url": "https://github.com/google/guava/releases/tag/v32.0.0"
+               "url": "https://security.gentoo.org/glsa/202301-05"
+            },
+            {
+               "url": "https://security.netapp.com/advisory/ntap-20221020-0004/"
+            },
+            {
+               "url": "https://securitylab.github.com/advisories/GHSL-2022-018_Apache_Commons_Text"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/171003/OX-App-Suite-Cross-Site-Scripting-Server-Side-Request-Forgery.html"
+            },
+            {
+               "url": "http://seclists.org/fulldisclosure/2023/Feb/3"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2022/10/13/4"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2022/10/18/1"
             }
          ]
       },
       {
-         "id": "64b714694f948c871663d527",
+         "id": "64d3defef1fbc97820d167ad",
          "category": "dependency_scanning",
-         "name": "GHSA-5mg8-w23w-74h3: Information Disclosure in Guava",
-         "description": "com.google.guava:guava@13.0.1 has a low severity vulnerability identified by GHSA-5mg8-w23w-74h3: Information Disclosure in Guava. No vulnerable function is known to be reachable. This vulnerability was fixed in version 30.0-android.\ncom.google.guava:guava@13.0.1 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
-         "severity": "Low",
-         "solution": "No newer versions of org.jboss.weld:weld-core (current: 1.1.33.Final, latest: 3.0.0.Alpha6) require com.google.guava:guava 30.0-android or higher. Consider other options to upgrade com.google.guava:guava to 30.0-android (current: 13.0.1, latest: 32.1.1-jre).",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "com.google.guava:guava"
-               },
-               "version": "13.0.1"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b714694f948c871663d527",
-               "value": "64b714694f948c871663d527",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b714694f948c871663d527"
-            },
-            {
-               "type": "ghsa",
-               "name": "GHSA-5mg8-w23w-74h3",
-               "value": "GHSA-5mg8-w23w-74h3",
-               "url": "https://github.com/advisories/GHSA-5mg8-w23w-74h3"
-            }
-         ],
-         "links": [
-            {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8908"
-            },
-            {
-               "url": "https://github.com/google/guava/issues/4011"
-            },
-            {
-               "url": "https://github.com/google/guava/commit/fec0dbc4634006a6162cfd4d0d09c962073ddf40"
-            },
-            {
-               "url": "https://github.com/google/guava"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r007add131977f4f576c232b25e024249a3d16f66aad14a4b52819d21%40%3Ccommon-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r007add131977f4f576c232b25e024249a3d16f66aad14a4b52819d21@%3Ccommon-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r037fed1d0ebde50c9caf8d99815db3093c344c3f651c5a49a09824ce@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r07ed3e4417ad043a27bee7bb33322e9bfc7d7e6d1719b8e3dfd95c14%40%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r07ed3e4417ad043a27bee7bb33322e9bfc7d7e6d1719b8e3dfd95c14@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r161b87f8037bbaff400194a63cd2016c9a69f5949f06dcc79beeab54%40%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r161b87f8037bbaff400194a63cd2016c9a69f5949f06dcc79beeab54@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r215b3d50f56faeb2f9383505f3e62faa9f549bb23e8a9848b78a968e%40%3Ccommits.ws.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r215b3d50f56faeb2f9383505f3e62faa9f549bb23e8a9848b78a968e@%3Ccommits.ws.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r294be9d31c0312d2c0837087204b5d4bf49d0552890e6eec716fa6a6%40%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r294be9d31c0312d2c0837087204b5d4bf49d0552890e6eec716fa6a6@%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r2fe45d96eea8434b91592ca08109118f6308d60f6d0e21d52438cfb4%40%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r2fe45d96eea8434b91592ca08109118f6308d60f6d0e21d52438cfb4@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748%40%3Ccommits.pulsar.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748@%3Ccommits.pulsar.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r3dd8881de891598d622227e9840dd7c2ef1d08abbb49e9690c7ae1bc%40%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r3dd8881de891598d622227e9840dd7c2ef1d08abbb49e9690c7ae1bc@%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r4776f62dfae4a0006658542f43034a7fc199350e35a66d4e18164ee6%40%3Ccommits.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r4776f62dfae4a0006658542f43034a7fc199350e35a66d4e18164ee6@%3Ccommits.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r49549a8322f62cd3acfa4490d25bfba0be04f3f9ff4d14fe36199d27%40%3Cyarn-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r49549a8322f62cd3acfa4490d25bfba0be04f3f9ff4d14fe36199d27@%3Cyarn-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r58a8775205ab1839dba43054b09a9ab3b25b423a4170b2413c4067ac%40%3Ccommon-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r58a8775205ab1839dba43054b09a9ab3b25b423a4170b2413c4067ac@%3Ccommon-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r5b3d93dfdfb7708e796e8762ab40edbde8ff8add48aba53e5ea26f44%40%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r5b3d93dfdfb7708e796e8762ab40edbde8ff8add48aba53e5ea26f44@%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r5d61b98ceb7bba939a651de5900dbd67be3817db6bfcc41c6e04e199%40%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r5d61b98ceb7bba939a651de5900dbd67be3817db6bfcc41c6e04e199@%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r6874dfe26eefc41b7c9a5e4a0487846fc4accf8c78ff948b24a1104a%40%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r6874dfe26eefc41b7c9a5e4a0487846fc4accf8c78ff948b24a1104a@%3Cdev.drill.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r68d86f4b06c808204f62bcb254fcb5b0432528ee8d37a07ef4bc8222%40%3Ccommits.ws.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r68d86f4b06c808204f62bcb254fcb5b0432528ee8d37a07ef4bc8222@%3Ccommits.ws.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r79e47ed555bdb1180e528420a7a2bb898541367a29a3bc6bbf0baf2c%40%3Cissues.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r79e47ed555bdb1180e528420a7a2bb898541367a29a3bc6bbf0baf2c@%3Cissues.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r7b0e81d8367264d6cad98766a469d64d11248eb654417809bfdacf09%40%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r7b0e81d8367264d6cad98766a469d64d11248eb654417809bfdacf09@%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba%40%3Cissues.maven.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba@%3Cissues.maven.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/ra7ab308481ee729f998691e8e3e02e93b1dedfc98f6b1cd3d86923b3%40%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/ra7ab308481ee729f998691e8e3e02e93b1dedfc98f6b1cd3d86923b3@%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rb2364f4cf4d274eab5a7ecfaf64bf575cedf8b0173551997c749d322%40%3Cgitbox.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rb2364f4cf4d274eab5a7ecfaf64bf575cedf8b0173551997c749d322@%3Cgitbox.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rb8c0f1b7589864396690fe42a91a71dea9412e86eec66dc85bbacaaf%40%3Ccommits.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rb8c0f1b7589864396690fe42a91a71dea9412e86eec66dc85bbacaaf@%3Ccommits.cxf.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3%40%3Ctorque-dev.db.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3@%3Ctorque-dev.db.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a%40%3Ctorque-dev.db.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a@%3Ctorque-dev.db.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rc607bc52f3507b8b9c28c6a747c3122f51ac24afe80af2a670785b97%40%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rc607bc52f3507b8b9c28c6a747c3122f51ac24afe80af2a670785b97@%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rcafc3a637d82bdc9a24036b2ddcad1e519dd0e6f848fcc3d606fd78f%40%3Cdev.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rcafc3a637d82bdc9a24036b2ddcad1e519dd0e6f848fcc3d606fd78f@%3Cdev.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95%40%3Cgithub.arrow.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95@%3Cgithub.arrow.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd2704306ec729ccac726e50339b8a8f079515cc29ccb77713b16e7c5%40%3Cissues.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd2704306ec729ccac726e50339b8a8f079515cc29ccb77713b16e7c5@%3Cissues.hive.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604%40%3Ctorque-dev.db.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604@%3Ctorque-dev.db.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd7e12d56d49d73e2b8549694974b07561b79b05455f7f781954231bf%40%3Cdev.pig.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rd7e12d56d49d73e2b8549694974b07561b79b05455f7f781954231bf@%3Cdev.pig.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/re120f6b3d2f8222121080342c5801fdafca2f5188ceeb3b49c8a1d27%40%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/re120f6b3d2f8222121080342c5801fdafca2f5188ceeb3b49c8a1d27@%3Cyarn-issues.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/reebbd63c25bc1a946caa419cec2be78079f8449d1af48e52d47c9e85%40%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/reebbd63c25bc1a946caa419cec2be78079f8449d1af48e52d47c9e85@%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rf00b688ffa620c990597f829ff85fdbba8bf73ee7bfb34783e1f0d4e%40%3Cyarn-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rf00b688ffa620c990597f829ff85fdbba8bf73ee7bfb34783e1f0d4e@%3Cyarn-dev.hadoop.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rf9f0fa84b8ae1a285f0210bafec6de2a9eba083007d04640b82aa625%40%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rf9f0fa84b8ae1a285f0210bafec6de2a9eba083007d04640b82aa625@%3Cissues.geode.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rfc27e2727a20a574f39273e0432aa97486a332f9b3068f6ac1346594%40%3Cdev.myfaces.apache.org%3E"
-            },
-            {
-               "url": "https://lists.apache.org/thread.html/rfc27e2727a20a574f39273e0432aa97486a332f9b3068f6ac1346594@%3Cdev.myfaces.apache.org%3E"
-            },
-            {
-               "url": "https://security.netapp.com/advisory/ntap-20220210-0003/"
-            },
-            {
-               "url": "https://snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-1015415"
-            },
-            {
-               "url": "https://www.oracle.com//security-alerts/cpujul2021.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuApr2021.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
-            }
-         ]
-      },
-      {
-         "id": "64b71469ddd812fb9482c9cc",
-         "category": "dependency_scanning",
-         "name": "GHSA-vwqq-5vrc-xw9h: Dependency org.apache.logging.log4j:log4j-core@2.3 With Low Severity Vulnerability (see vulnerability description for more details)",
+         "name": "GHSA-vwqq-5vrc-xw9h: Improper validation of certificate with host mismatch in Apache Log4j SMTP appender",
          "description": "org.apache.logging.log4j:log4j-core@2.3 has a low severity vulnerability identified by GHSA-vwqq-5vrc-xw9h: Improper validation of certificate with host mismatch in Apache Log4j SMTP appender. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.2.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "severity": "Low",
          "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.logging.log4j:log4j-core version 2.3.2 (current: 2.3, latest: 3.0.0-alpha1).",
@@ -1068,9 +557,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469ddd812fb9482c9cc",
-               "value": "64b71469ddd812fb9482c9cc",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469ddd812fb9482c9cc"
+               "name": "EndorLabs-64d3defef1fbc97820d167ad",
+               "value": "64d3defef1fbc97820d167ad",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defef1fbc97820d167ad"
             },
             {
                "type": "ghsa",
@@ -1233,12 +722,12 @@
          ]
       },
       {
-         "id": "64b71469c98f6e1860dcdb39",
+         "id": "64d3defe993a0866e307d6b1",
          "category": "dependency_scanning",
-         "name": "GHSA-8489-44mv-ggj8: Improper Input Validation and Injection in Apache Log4j2",
-         "description": "org.apache.logging.log4j:log4j-core@2.3 has a medium severity vulnerability identified by GHSA-8489-44mv-ggj8: Improper Input Validation and Injection in Apache Log4j2. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.2.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Medium",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.logging.log4j:log4j-core version 2.3.2 (current: 2.3, latest: 3.0.0-alpha1).",
+         "name": "GHSA-jfh8-c2jp-5v3q: Remote code injection in Log4j",
+         "description": "org.apache.logging.log4j:log4j-core@2.3 has a critical vulnerability identified by GHSA-jfh8-c2jp-5v3q: Remote code injection in Log4j. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.1.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Critical",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.logging.log4j:log4j-core version 2.3.1 (current: 2.3, latest: 3.0.0-alpha1).",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -1255,47 +744,122 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469c98f6e1860dcdb39",
-               "value": "64b71469c98f6e1860dcdb39",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469c98f6e1860dcdb39"
+               "name": "EndorLabs-64d3defe993a0866e307d6b1",
+               "value": "64d3defe993a0866e307d6b1",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defe993a0866e307d6b1"
             },
             {
                "type": "ghsa",
-               "name": "GHSA-8489-44mv-ggj8",
-               "value": "GHSA-8489-44mv-ggj8",
-               "url": "https://github.com/advisories/GHSA-8489-44mv-ggj8"
+               "name": "GHSA-jfh8-c2jp-5v3q",
+               "value": "GHSA-jfh8-c2jp-5v3q",
+               "url": "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q"
             }
          ],
          "links": [
             {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44832"
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
             },
             {
-               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-784507.pdf"
+               "url": "https://github.com/apache/logging-log4j2/pull/608"
+            },
+            {
+               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-397453.pdf"
+            },
+            {
+               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-479842.pdf"
+            },
+            {
+               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-661247.pdf"
+            },
+            {
+               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-714170.pdf"
+            },
+            {
+               "url": "https://github.com/advisories/GHSA-7rjr-3q55-vv33"
             },
             {
                "url": "https://github.com/apache/logging-log4j2"
             },
             {
-               "url": "https://issues.apache.org/jira/browse/LOG4J2-3293"
+               "url": "https://github.com/cisagov/log4j-affected-db"
             },
             {
-               "url": "https://lists.apache.org/thread/s1o5vlo78ypqxnzn6p8zf6t9shtq5143"
+               "url": "https://github.com/cisagov/log4j-affected-db/blob/develop/SOFTWARE-LIST.md"
             },
             {
-               "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00036.html"
+               "url": "https://github.com/nu11secur1ty/CVE-mitre/tree/main/CVE-2021-44228"
             },
             {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EVV25FXL4FU5X6X5BSL7RLQ7T6F65MRA/"
+               "url": "https://github.com/tangxiaofeng7/apache-log4j-poc"
             },
             {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T57MPJUW3MA6QGWZRTMCHHMMPQNVKGFC/"
+               "url": "https://issues.apache.org/jira/browse/LOG4J2-3198"
             },
             {
-               "url": "https://security.netapp.com/advisory/ntap-20220104-0001/"
+               "url": "https://issues.apache.org/jira/browse/LOG4J2-3201"
+            },
+            {
+               "url": "https://issues.apache.org/jira/browse/LOG4J2-3214"
+            },
+            {
+               "url": "https://issues.apache.org/jira/browse/LOG4J2-3221"
+            },
+            {
+               "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00007.html"
+            },
+            {
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M5CSVUNV4HWZZXGOKNSK6L7RPM7BOKIB/"
+            },
+            {
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VU57UJDCFIASIO35GC55JMKSRXJMCDFM/"
+            },
+            {
+               "url": "https://logging.apache.org/log4j/2.x/changes-report.html#a2.15.0"
+            },
+            {
+               "url": "https://logging.apache.org/log4j/2.x/manual/lookups.html#JndiLookup"
+            },
+            {
+               "url": "https://logging.apache.org/log4j/2.x/manual/migration.html"
+            },
+            {
+               "url": "https://logging.apache.org/log4j/2.x/security.html"
+            },
+            {
+               "url": "https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/"
+            },
+            {
+               "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0032"
+            },
+            {
+               "url": "https://security.netapp.com/advisory/ntap-20211210-0007/"
+            },
+            {
+               "url": "https://support.apple.com/kb/HT213189"
             },
             {
                "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apache-log4j-qRuKNEbd"
+            },
+            {
+               "url": "https://twitter.com/kurtseifried/status/1469345530182455296"
+            },
+            {
+               "url": "https://www.bentley.com/en/common-vulnerability-exposure/be-2022-0001"
+            },
+            {
+               "url": "https://www.debian.org/security/2021/dsa-5020"
+            },
+            {
+               "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00646.html"
+            },
+            {
+               "url": "https://www.kb.cert.org/vuls/id/930724"
+            },
+            {
+               "url": "https://www.nu11secur1ty.com/2021/12/cve-2021-44228.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/alert-cve-2021-44228.html"
             },
             {
                "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
@@ -1304,15 +868,87 @@
                "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
             },
             {
-               "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
+               "url": "http://packetstormsecurity.com/files/165225/Apache-Log4j2-2.14.1-Remote-Code-Execution.html"
             },
             {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/28/1"
+               "url": "http://packetstormsecurity.com/files/165260/VMware-Security-Advisory-2021-0028.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165261/Apache-Log4j2-2.14.1-Information-Disclosure.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165270/Apache-Log4j2-2.14.1-Remote-Code-Execution.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165281/Log4j2-Log4Shell-Regexes.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165282/Log4j-Payload-Generator.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165306/L4sh-Log4j-Remote-Code-Execution.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165307/Log4j-Remote-Code-Execution-Word-Bypassing.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165311/log4j-scan-Extensive-Scanner.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165371/VMware-Security-Advisory-2021-0028.4.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165532/Log4Shell-HTTP-Header-Injection.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165642/VMware-vCenter-Server-Unauthenticated-Log4Shell-JNDI-Injection-Remote-Code-Execution.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/165673/UniFi-Network-Application-Unauthenticated-Log4Shell-Remote-Code-Execution.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/167794/Open-Xchange-App-Suite-7.10.x-Cross-Site-Scripting-Command-Injection.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/167917/MobileIron-Log4Shell-Remote-Command-Execution.html"
+            },
+            {
+               "url": "http://packetstormsecurity.com/files/171626/AD-Manager-Plus-7122-Remote-Code-Execution.html"
+            },
+            {
+               "url": "http://seclists.org/fulldisclosure/2022/Dec/2"
+            },
+            {
+               "url": "http://seclists.org/fulldisclosure/2022/Jul/11"
+            },
+            {
+               "url": "http://seclists.org/fulldisclosure/2022/Mar/23"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/10/1"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/10/2"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/10/3"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/13/1"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/13/2"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/14/4"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/15/3"
             }
          ]
       },
       {
-         "id": "64b71469f63083e7bf3009f9",
+         "id": "64d3defe7a977a2134b6281f",
          "category": "dependency_scanning",
          "name": "GHSA-fxph-q3j8-mv87: Deserialization of Untrusted Data in Log4j",
          "description": "org.apache.logging.log4j:log4j-core@2.3 has a critical vulnerability identified by GHSA-fxph-q3j8-mv87: Deserialization of Untrusted Data in Log4j. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.8.2.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -1334,9 +970,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469f63083e7bf3009f9",
-               "value": "64b71469f63083e7bf3009f9",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469f63083e7bf3009f9"
+               "name": "EndorLabs-64d3defe7a977a2134b6281f",
+               "value": "64d3defe7a977a2134b6281f",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defe7a977a2134b6281f"
             },
             {
                "type": "ghsa",
@@ -1601,11 +1237,11 @@
          ]
       },
       {
-         "id": "64b71469a49d5e7c6a41aba5",
+         "id": "64d3defef1fbc97820d167b5",
          "category": "dependency_scanning",
-         "name": "GHSA-jfh8-c2jp-5v3q: Remote code injection in Log4j",
-         "description": "org.apache.logging.log4j:log4j-core@2.3 has a critical vulnerability identified by GHSA-jfh8-c2jp-5v3q: Remote code injection in Log4j. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.1.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Critical",
+         "name": "GHSA-p6xc-xr62-6r2g: Apache Log4j2 vulnerable to Improper Input Validation and Uncontrolled Recursion",
+         "description": "org.apache.logging.log4j:log4j-core@2.3 has a medium severity vulnerability identified by GHSA-p6xc-xr62-6r2g: Apache Log4j2 vulnerable to Improper Input Validation and Uncontrolled Recursion. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.1.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Medium",
          "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.logging.log4j:log4j-core version 2.3.1 (current: 2.3, latest: 3.0.0-alpha1).",
          "scanner": {
             "id": "endorlabs",
@@ -1623,122 +1259,53 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469a49d5e7c6a41aba5",
-               "value": "64b71469a49d5e7c6a41aba5",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469a49d5e7c6a41aba5"
+               "name": "EndorLabs-64d3defef1fbc97820d167b5",
+               "value": "64d3defef1fbc97820d167b5",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defef1fbc97820d167b5"
             },
             {
                "type": "ghsa",
-               "name": "GHSA-jfh8-c2jp-5v3q",
-               "value": "GHSA-jfh8-c2jp-5v3q",
-               "url": "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q"
+               "name": "GHSA-p6xc-xr62-6r2g",
+               "value": "GHSA-p6xc-xr62-6r2g",
+               "url": "https://github.com/advisories/GHSA-p6xc-xr62-6r2g"
             }
          ],
          "links": [
             {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
-            },
-            {
-               "url": "https://github.com/apache/logging-log4j2/pull/608"
-            },
-            {
-               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-397453.pdf"
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45105"
             },
             {
                "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-479842.pdf"
             },
             {
-               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-661247.pdf"
+               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-501673.pdf"
             },
             {
-               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-714170.pdf"
+               "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00017.html"
             },
             {
-               "url": "https://github.com/advisories/GHSA-7rjr-3q55-vv33"
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EOKPQGV24RRBBI4TBZUDQMM4MEH7MXCY/"
             },
             {
-               "url": "https://github.com/apache/logging-log4j2"
-            },
-            {
-               "url": "https://github.com/cisagov/log4j-affected-db"
-            },
-            {
-               "url": "https://github.com/cisagov/log4j-affected-db/blob/develop/SOFTWARE-LIST.md"
-            },
-            {
-               "url": "https://github.com/nu11secur1ty/CVE-mitre/tree/main/CVE-2021-44228"
-            },
-            {
-               "url": "https://github.com/tangxiaofeng7/apache-log4j-poc"
-            },
-            {
-               "url": "https://issues.apache.org/jira/browse/LOG4J2-3198"
-            },
-            {
-               "url": "https://issues.apache.org/jira/browse/LOG4J2-3201"
-            },
-            {
-               "url": "https://issues.apache.org/jira/browse/LOG4J2-3214"
-            },
-            {
-               "url": "https://issues.apache.org/jira/browse/LOG4J2-3221"
-            },
-            {
-               "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00007.html"
-            },
-            {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M5CSVUNV4HWZZXGOKNSK6L7RPM7BOKIB/"
-            },
-            {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VU57UJDCFIASIO35GC55JMKSRXJMCDFM/"
-            },
-            {
-               "url": "https://logging.apache.org/log4j/2.x/changes-report.html#a2.15.0"
-            },
-            {
-               "url": "https://logging.apache.org/log4j/2.x/manual/lookups.html#JndiLookup"
-            },
-            {
-               "url": "https://logging.apache.org/log4j/2.x/manual/migration.html"
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SIG7FZULMNK2XF6FZRU4VWYDQXNMUGAJ/"
             },
             {
                "url": "https://logging.apache.org/log4j/2.x/security.html"
             },
             {
-               "url": "https://msrc-blog.microsoft.com/2021/12/11/microsofts-response-to-cve-2021-44228-apache-log4j2/"
-            },
-            {
                "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0032"
             },
             {
-               "url": "https://security.netapp.com/advisory/ntap-20211210-0007/"
-            },
-            {
-               "url": "https://support.apple.com/kb/HT213189"
+               "url": "https://security.netapp.com/advisory/ntap-20211218-0001/"
             },
             {
                "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apache-log4j-qRuKNEbd"
             },
             {
-               "url": "https://twitter.com/kurtseifried/status/1469345530182455296"
-            },
-            {
-               "url": "https://www.bentley.com/en/common-vulnerability-exposure/be-2022-0001"
-            },
-            {
-               "url": "https://www.debian.org/security/2021/dsa-5020"
-            },
-            {
-               "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00646.html"
+               "url": "https://www.debian.org/security/2021/dsa-5024"
             },
             {
                "url": "https://www.kb.cert.org/vuls/id/930724"
-            },
-            {
-               "url": "https://www.nu11secur1ty.com/2021/12/cve-2021-44228.html"
-            },
-            {
-               "url": "https://www.oracle.com/security-alerts/alert-cve-2021-44228.html"
             },
             {
                "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
@@ -1747,87 +1314,97 @@
                "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
             },
             {
-               "url": "http://packetstormsecurity.com/files/165225/Apache-Log4j2-2.14.1-Remote-Code-Execution.html"
+               "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
             },
             {
-               "url": "http://packetstormsecurity.com/files/165260/VMware-Security-Advisory-2021-0028.html"
+               "url": "https://www.zerodayinitiative.com/advisories/ZDI-21-1541/"
             },
             {
-               "url": "http://packetstormsecurity.com/files/165261/Apache-Log4j2-2.14.1-Information-Disclosure.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165270/Apache-Log4j2-2.14.1-Remote-Code-Execution.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165281/Log4j2-Log4Shell-Regexes.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165282/Log4j-Payload-Generator.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165306/L4sh-Log4j-Remote-Code-Execution.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165307/Log4j-Remote-Code-Execution-Word-Bypassing.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165311/log4j-scan-Extensive-Scanner.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165371/VMware-Security-Advisory-2021-0028.4.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165532/Log4Shell-HTTP-Header-Injection.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165642/VMware-vCenter-Server-Unauthenticated-Log4Shell-JNDI-Injection-Remote-Code-Execution.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/165673/UniFi-Network-Application-Unauthenticated-Log4Shell-Remote-Code-Execution.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/167794/Open-Xchange-App-Suite-7.10.x-Cross-Site-Scripting-Command-Injection.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/167917/MobileIron-Log4Shell-Remote-Command-Execution.html"
-            },
-            {
-               "url": "http://packetstormsecurity.com/files/171626/AD-Manager-Plus-7122-Remote-Code-Execution.html"
-            },
-            {
-               "url": "http://seclists.org/fulldisclosure/2022/Dec/2"
-            },
-            {
-               "url": "http://seclists.org/fulldisclosure/2022/Jul/11"
-            },
-            {
-               "url": "http://seclists.org/fulldisclosure/2022/Mar/23"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/10/1"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/10/2"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/10/3"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/13/1"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/13/2"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/14/4"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/15/3"
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/19/1"
             }
          ]
       },
       {
-         "id": "64b714690e3bce535810286c",
+         "id": "64d3defe993a0866e307d6bc",
+         "category": "dependency_scanning",
+         "name": "GHSA-8489-44mv-ggj8: Improper Input Validation and Injection in Apache Log4j2",
+         "description": "org.apache.logging.log4j:log4j-core@2.3 has a medium severity vulnerability identified by GHSA-8489-44mv-ggj8: Improper Input Validation and Injection in Apache Log4j2. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.2.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Medium",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.logging.log4j:log4j-core version 2.3.2 (current: 2.3, latest: 3.0.0-alpha1).",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "org.apache.logging.log4j:log4j-core"
+               },
+               "version": "2.3"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3defe993a0866e307d6bc",
+               "value": "64d3defe993a0866e307d6bc",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defe993a0866e307d6bc"
+            },
+            {
+               "type": "ghsa",
+               "name": "GHSA-8489-44mv-ggj8",
+               "value": "GHSA-8489-44mv-ggj8",
+               "url": "https://github.com/advisories/GHSA-8489-44mv-ggj8"
+            }
+         ],
+         "links": [
+            {
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-44832"
+            },
+            {
+               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-784507.pdf"
+            },
+            {
+               "url": "https://github.com/apache/logging-log4j2"
+            },
+            {
+               "url": "https://issues.apache.org/jira/browse/LOG4J2-3293"
+            },
+            {
+               "url": "https://lists.apache.org/thread/s1o5vlo78ypqxnzn6p8zf6t9shtq5143"
+            },
+            {
+               "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00036.html"
+            },
+            {
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EVV25FXL4FU5X6X5BSL7RLQ7T6F65MRA/"
+            },
+            {
+               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/T57MPJUW3MA6QGWZRTMCHHMMPQNVKGFC/"
+            },
+            {
+               "url": "https://security.netapp.com/advisory/ntap-20220104-0001/"
+            },
+            {
+               "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apache-log4j-qRuKNEbd"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
+            },
+            {
+               "url": "http://www.openwall.com/lists/oss-security/2021/12/28/1"
+            }
+         ]
+      },
+      {
+         "id": "64d3defee3ec58e6eade5814",
          "category": "dependency_scanning",
          "name": "GHSA-7rjr-3q55-vv33: Incomplete fix for Apache Log4j vulnerability",
          "description": "org.apache.logging.log4j:log4j-core@2.3 has a critical vulnerability identified by GHSA-7rjr-3q55-vv33: Incomplete fix for Apache Log4j vulnerability. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.1.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -1849,9 +1426,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b714690e3bce535810286c",
-               "value": "64b714690e3bce535810286c",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b714690e3bce535810286c"
+               "name": "EndorLabs-64d3defee3ec58e6eade5814",
+               "value": "64d3defee3ec58e6eade5814",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defee3ec58e6eade5814"
             },
             {
                "type": "ghsa",
@@ -1939,7 +1516,264 @@
          ]
       },
       {
-         "id": "64b71469a49d5e7c6a41aba6",
+         "id": "64d3defe8046d391c0e3ecae",
+         "category": "dependency_scanning",
+         "name": "GHSA-mvr2-9pj6-7w5j: Denial of Service in Google Guava",
+         "description": "com.google.guava:guava@13.0.1 has a medium severity vulnerability identified by GHSA-mvr2-9pj6-7w5j: Denial of Service in Google Guava. No vulnerable function is known to be reachable. This vulnerability was fixed in version 24.1.1-android.\ncom.google.guava:guava@13.0.1 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
+         "severity": "Medium",
+         "solution": "No newer versions of org.jboss.weld:weld-core (current: 1.1.33.Final, latest: 3.0.0.Alpha6) require com.google.guava:guava 24.1.1-android or higher. Consider other options to upgrade com.google.guava:guava to 24.1.1-android (current: 13.0.1, latest: 32.1.2-jre).",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "com.google.guava:guava"
+               },
+               "version": "13.0.1"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3defe8046d391c0e3ecae",
+               "value": "64d3defe8046d391c0e3ecae",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3defe8046d391c0e3ecae"
+            },
+            {
+               "type": "ghsa",
+               "name": "GHSA-mvr2-9pj6-7w5j",
+               "value": "GHSA-mvr2-9pj6-7w5j",
+               "url": "https://github.com/advisories/GHSA-mvr2-9pj6-7w5j"
+            }
+         ],
+         "links": [
+            {
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-10237"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2423"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2424"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2425"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2428"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2598"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2643"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2740"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2741"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2742"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2743"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2018:2927"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2019:2858"
+            },
+            {
+               "url": "https://access.redhat.com/errata/RHSA-2019:3149"
+            },
+            {
+               "url": "https://github.com/google/guava/wiki/CVE-2018-10237"
+            },
+            {
+               "url": "https://groups.google.com/d/topic/guava-announce/xqWALw4W1vs/discussion"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/053d9ce4d579b02203db18545fee5e33f35f2932885459b74d1e4272@%3Cissues.activemq.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/19fa48533bc7ea1accf6b12746a74ed888ae6e49a5cf81ae4f807495@%3Ccommon-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/33c6bccfeb7adf644d4d79894ca8f09370be6ed4b20632c2e228d085@%3Ccommits.cassandra.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/3d5dbdd92ac9ceaef90e40f78599f9109f2f345252e0ac9d98e7e084@%3Cgitbox.activemq.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/3ddd79c801edd99c0978e83dbe2168ebd36fd42acfa5dac38fb03dd6@%3Cissues.activemq.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/519eb0fd45642dcecd9ff74cb3e71c20a4753f7d82e2f07864b5108f@%3Cdev.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/b0656d359c7d40ec9f39c8cc61bca66802ef9a2a12ee199f5b0c1442@%3Cdev.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/cc48fe770c45a74dc3b37ed0817393e0c96701fc49bc431ed922f3cc@%3Chdfs-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/f9bc3e55f4e28d1dcd1a69aae6d53e609a758e34d2869b4d798e13cc@%3Cissues.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/ff8dcfe29377088ab655fda9d585dccd5b1f07fabd94ae84fd60a7f8@%3Ccommits.pulsar.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cdev.flink.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r02e39d7beb32eebcdbb4b516e95f67d71c90d5d462b26f4078d21eeb@%3Cuser.flink.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r223bc776a077d0795786c38cbc6e7dd808fce1a9161b00ba9c0a5d55@%3Cissues.lucene.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r22c8173b804cd4a420c43064ba4e363d0022aa421008b1989f7354d4@%3Cissues.flink.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r27eb79a87a760335226dbfa6a7b7bffea539a535f8e80c41e482106d@%3Cdev.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r2ea4e5e5aa8ad73b001a466c582899620961f47d77a40af712c1fdf9@%3Cdev.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r30e7d7b6bfa630dacc41649a0e96dad75165d50474c1241068aa0f94@%3Cissues.storm.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r352e40ca9874d1beb4ad95403792adca7eb295e6bc3bd7b65fabcc21@%3Ccommits.samza.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r38e2ab87528d3c904e7fac496e8fd766b9277656ff95b97d6b6b6dcd@%3Cdev.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748@%3Ccommits.pulsar.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r43491b25b2e5c368c34b106a82eff910a5cea3e90de82ad75cc16540@%3Cdev.syncope.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r50fc0bcc734dd82e691d36d209258683141bfc0083739a77e56ad92d@%3Cdev.flink.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba@%3Cissues.maven.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r95799427b335807a4c54776908125c3e66597b65845ae50096d9278a@%3Cdev.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/ra0adb9653c7de9539b93cc8434143b655f753b9f60580ff260becb2b@%3Cusers.kafka.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/ra4f44016926dcb034b3b230280a18102062f94ae55b8a31bb92fed84@%3Cissues.lucene.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/ra8906723927aef2a599398c238eacfc845b74d812e0093ec2fc70a7d@%3Cissues.flink.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rb3da574c34bc6bd37972d2266af3093b90d7e437460423c24f477919@%3Cissues.lucene.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rc78f6e84f82cc662860e96526d8ab969f34dbe12dc560e22d9d147a3@%3Cdev.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rc8467f357b943ceaa86f289f8bc1a5d1c7955b75d3bac1426f2d4ac1@%3Ccommon-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95@%3Cgithub.arrow.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd0c8ec6e044aa2958dd0549ebf8ecead7f5968c9474ba73a504161b2@%3Cdev.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rdc56c15693c236e31e1e95f847b8e5e74fc0a05741d47488e7fc8c45@%3Cissues.flink.apache.org%3E"
+            },
+            {
+               "url": "https://security.netapp.com/advisory/ntap-20220629-0008/"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpuapr2020.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpujan2021.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpujul2020.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+            },
+            {
+               "url": "http://www.securitytracker.com/id/1041707"
+            }
+         ]
+      },
+      {
+         "id": "64d3deff8046d391c0e3ecaf",
+         "category": "dependency_scanning",
+         "name": "GHSA-7g45-4rm6-3mm3: Guava vulnerable to insecure use of temporary directory",
+         "description": "com.google.guava:guava@13.0.1 has a medium severity vulnerability identified by GHSA-7g45-4rm6-3mm3: Guava vulnerable to insecure use of temporary directory. A vulnerable function is reachable. This vulnerability was fixed in version 32.0.0-android.\ncom.google.guava:guava@13.0.1 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
+         "severity": "Medium",
+         "solution": "No newer versions of org.jboss.weld:weld-core (current: 1.1.33.Final, latest: 3.0.0.Alpha6) require com.google.guava:guava 32.0.0-android or higher. Consider other options to upgrade com.google.guava:guava to 32.0.0-android (current: 13.0.1, latest: 32.1.2-jre).",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "com.google.guava:guava"
+               },
+               "version": "13.0.1"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3deff8046d391c0e3ecaf",
+               "value": "64d3deff8046d391c0e3ecaf",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3deff8046d391c0e3ecaf"
+            },
+            {
+               "type": "ghsa",
+               "name": "GHSA-7g45-4rm6-3mm3",
+               "value": "GHSA-7g45-4rm6-3mm3",
+               "url": "https://github.com/advisories/GHSA-7g45-4rm6-3mm3"
+            }
+         ],
+         "links": [
+            {
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-2976"
+            },
+            {
+               "url": "https://github.com/google/guava/issues/2575"
+            },
+            {
+               "url": "https://github.com/google/guava/issues/6532"
+            },
+            {
+               "url": "https://github.com/google/guava/commit/feb83a1c8fd2e7670b244d5afd23cba5aca43284"
+            },
+            {
+               "url": "https://github.com/google/guava"
+            },
+            {
+               "url": "https://github.com/google/guava/releases/tag/v32.0.0"
+            }
+         ]
+      },
+      {
+         "id": "64d3deff79123a79a6265afb",
          "category": "dependency_scanning",
          "name": "GHSA-2qrg-x229-3v8q: Deserialization of Untrusted Data in Log4j",
          "description": "org.apache.logging.log4j:log4j-core@2.3 has a critical vulnerability identified by GHSA-2qrg-x229-3v8q: Deserialization of Untrusted Data in Log4j. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.8.2.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -1961,9 +1795,9 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b71469a49d5e7c6a41aba6",
-               "value": "64b71469a49d5e7c6a41aba6",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b71469a49d5e7c6a41aba6"
+               "name": "EndorLabs-64d3deff79123a79a6265afb",
+               "value": "64d3deff79123a79a6265afb",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3deff79123a79a6265afb"
             },
             {
                "type": "ghsa",
@@ -2318,12 +2152,12 @@
          ]
       },
       {
-         "id": "64b714694f948c871663d528",
+         "id": "64d3deff993a0866e307d6bd",
          "category": "dependency_scanning",
-         "name": "GHSA-p6xc-xr62-6r2g: Dependency org.apache.logging.log4j:log4j-core@2.3 With Medium Severity Vulnerability (see vulnerability description for more details)",
-         "description": "org.apache.logging.log4j:log4j-core@2.3 has a medium severity vulnerability identified by GHSA-p6xc-xr62-6r2g: Apache Log4j2 vulnerable to Improper Input Validation and Uncontrolled Recursion. No vulnerable function is known to be reachable. This vulnerability was fixed in version 2.3.1.\norg.apache.logging.log4j:log4j-core@2.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Medium",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.apache.logging.log4j:log4j-core version 2.3.1 (current: 2.3, latest: 3.0.0-alpha1).",
+         "name": "GHSA-5mg8-w23w-74h3: Information Disclosure in Guava",
+         "description": "com.google.guava:guava@13.0.1 has a low severity vulnerability identified by GHSA-5mg8-w23w-74h3: Information Disclosure in Guava. No vulnerable function is known to be reachable. This vulnerability was fixed in version 30.0-android.\ncom.google.guava:guava@13.0.1 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.jboss.weld:weld-core@1.1.33.Final.",
+         "severity": "Low",
+         "solution": "No newer versions of org.jboss.weld:weld-core (current: 1.1.33.Final, latest: 3.0.0.Alpha6) require com.google.guava:guava 30.0-android or higher. Consider other options to upgrade com.google.guava:guava to 30.0-android (current: 13.0.1, latest: 32.1.2-jre).",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -2332,61 +2166,256 @@
             "file": "pom.xml",
             "dependency": {
                "package": {
-                  "name": "org.apache.logging.log4j:log4j-core"
+                  "name": "com.google.guava:guava"
                },
-               "version": "2.3"
+               "version": "13.0.1"
             }
          },
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b714694f948c871663d528",
-               "value": "64b714694f948c871663d528",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b714694f948c871663d528"
+               "name": "EndorLabs-64d3deff993a0866e307d6bd",
+               "value": "64d3deff993a0866e307d6bd",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3deff993a0866e307d6bd"
             },
             {
                "type": "ghsa",
-               "name": "GHSA-p6xc-xr62-6r2g",
-               "value": "GHSA-p6xc-xr62-6r2g",
-               "url": "https://github.com/advisories/GHSA-p6xc-xr62-6r2g"
+               "name": "GHSA-5mg8-w23w-74h3",
+               "value": "GHSA-5mg8-w23w-74h3",
+               "url": "https://github.com/advisories/GHSA-5mg8-w23w-74h3"
             }
          ],
          "links": [
             {
-               "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45105"
+               "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8908"
             },
             {
-               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-479842.pdf"
+               "url": "https://github.com/google/guava/issues/4011"
             },
             {
-               "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-501673.pdf"
+               "url": "https://github.com/google/guava/commit/fec0dbc4634006a6162cfd4d0d09c962073ddf40"
             },
             {
-               "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00017.html"
+               "url": "https://github.com/google/guava"
             },
             {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/EOKPQGV24RRBBI4TBZUDQMM4MEH7MXCY/"
+               "url": "https://lists.apache.org/thread.html/r007add131977f4f576c232b25e024249a3d16f66aad14a4b52819d21%40%3Ccommon-issues.hadoop.apache.org%3E"
             },
             {
-               "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SIG7FZULMNK2XF6FZRU4VWYDQXNMUGAJ/"
+               "url": "https://lists.apache.org/thread.html/r007add131977f4f576c232b25e024249a3d16f66aad14a4b52819d21@%3Ccommon-issues.hadoop.apache.org%3E"
             },
             {
-               "url": "https://logging.apache.org/log4j/2.x/security.html"
+               "url": "https://lists.apache.org/thread.html/r037fed1d0ebde50c9caf8d99815db3093c344c3f651c5a49a09824ce@%3Cdev.drill.apache.org%3E"
             },
             {
-               "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0032"
+               "url": "https://lists.apache.org/thread.html/r07ed3e4417ad043a27bee7bb33322e9bfc7d7e6d1719b8e3dfd95c14%40%3Cdev.drill.apache.org%3E"
             },
             {
-               "url": "https://security.netapp.com/advisory/ntap-20211218-0001/"
+               "url": "https://lists.apache.org/thread.html/r07ed3e4417ad043a27bee7bb33322e9bfc7d7e6d1719b8e3dfd95c14@%3Cdev.drill.apache.org%3E"
             },
             {
-               "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apache-log4j-qRuKNEbd"
+               "url": "https://lists.apache.org/thread.html/r161b87f8037bbaff400194a63cd2016c9a69f5949f06dcc79beeab54%40%3Cdev.drill.apache.org%3E"
             },
             {
-               "url": "https://www.debian.org/security/2021/dsa-5024"
+               "url": "https://lists.apache.org/thread.html/r161b87f8037bbaff400194a63cd2016c9a69f5949f06dcc79beeab54@%3Cdev.drill.apache.org%3E"
             },
             {
-               "url": "https://www.kb.cert.org/vuls/id/930724"
+               "url": "https://lists.apache.org/thread.html/r215b3d50f56faeb2f9383505f3e62faa9f549bb23e8a9848b78a968e%40%3Ccommits.ws.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r215b3d50f56faeb2f9383505f3e62faa9f549bb23e8a9848b78a968e@%3Ccommits.ws.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r294be9d31c0312d2c0837087204b5d4bf49d0552890e6eec716fa6a6%40%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r294be9d31c0312d2c0837087204b5d4bf49d0552890e6eec716fa6a6@%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r2fe45d96eea8434b91592ca08109118f6308d60f6d0e21d52438cfb4%40%3Cdev.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r2fe45d96eea8434b91592ca08109118f6308d60f6d0e21d52438cfb4@%3Cdev.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748%40%3Ccommits.pulsar.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r3c3b33ee5bef0c67391d27a97cbfd89d44f328cf072b601b58d4e748@%3Ccommits.pulsar.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r3dd8881de891598d622227e9840dd7c2ef1d08abbb49e9690c7ae1bc%40%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r3dd8881de891598d622227e9840dd7c2ef1d08abbb49e9690c7ae1bc@%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r4776f62dfae4a0006658542f43034a7fc199350e35a66d4e18164ee6%40%3Ccommits.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r4776f62dfae4a0006658542f43034a7fc199350e35a66d4e18164ee6@%3Ccommits.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r49549a8322f62cd3acfa4490d25bfba0be04f3f9ff4d14fe36199d27%40%3Cyarn-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r49549a8322f62cd3acfa4490d25bfba0be04f3f9ff4d14fe36199d27@%3Cyarn-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r58a8775205ab1839dba43054b09a9ab3b25b423a4170b2413c4067ac%40%3Ccommon-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r58a8775205ab1839dba43054b09a9ab3b25b423a4170b2413c4067ac@%3Ccommon-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r5b3d93dfdfb7708e796e8762ab40edbde8ff8add48aba53e5ea26f44%40%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r5b3d93dfdfb7708e796e8762ab40edbde8ff8add48aba53e5ea26f44@%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r5d61b98ceb7bba939a651de5900dbd67be3817db6bfcc41c6e04e199%40%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r5d61b98ceb7bba939a651de5900dbd67be3817db6bfcc41c6e04e199@%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r6874dfe26eefc41b7c9a5e4a0487846fc4accf8c78ff948b24a1104a%40%3Cdev.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r6874dfe26eefc41b7c9a5e4a0487846fc4accf8c78ff948b24a1104a@%3Cdev.drill.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r68d86f4b06c808204f62bcb254fcb5b0432528ee8d37a07ef4bc8222%40%3Ccommits.ws.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r68d86f4b06c808204f62bcb254fcb5b0432528ee8d37a07ef4bc8222@%3Ccommits.ws.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r79e47ed555bdb1180e528420a7a2bb898541367a29a3bc6bbf0baf2c%40%3Cissues.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r79e47ed555bdb1180e528420a7a2bb898541367a29a3bc6bbf0baf2c@%3Cissues.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r7b0e81d8367264d6cad98766a469d64d11248eb654417809bfdacf09%40%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r7b0e81d8367264d6cad98766a469d64d11248eb654417809bfdacf09@%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba%40%3Cissues.maven.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/r841c5e14e1b55281523ebcde661ece00b38a0569e00ef5e12bd5f6ba@%3Cissues.maven.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/ra7ab308481ee729f998691e8e3e02e93b1dedfc98f6b1cd3d86923b3%40%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/ra7ab308481ee729f998691e8e3e02e93b1dedfc98f6b1cd3d86923b3@%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rb2364f4cf4d274eab5a7ecfaf64bf575cedf8b0173551997c749d322%40%3Cgitbox.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rb2364f4cf4d274eab5a7ecfaf64bf575cedf8b0173551997c749d322@%3Cgitbox.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rb8c0f1b7589864396690fe42a91a71dea9412e86eec66dc85bbacaaf%40%3Ccommits.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rb8c0f1b7589864396690fe42a91a71dea9412e86eec66dc85bbacaaf@%3Ccommits.cxf.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3%40%3Ctorque-dev.db.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rbc7642b9800249553f13457e46b813bea1aec99d2bc9106510e00ff3@%3Ctorque-dev.db.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a%40%3Ctorque-dev.db.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rc2dbc4633a6eea1fcbce6831876cfa17b73759a98c65326d1896cb1a@%3Ctorque-dev.db.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rc607bc52f3507b8b9c28c6a747c3122f51ac24afe80af2a670785b97%40%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rc607bc52f3507b8b9c28c6a747c3122f51ac24afe80af2a670785b97@%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rcafc3a637d82bdc9a24036b2ddcad1e519dd0e6f848fcc3d606fd78f%40%3Cdev.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rcafc3a637d82bdc9a24036b2ddcad1e519dd0e6f848fcc3d606fd78f@%3Cdev.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95%40%3Cgithub.arrow.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd01f5ff0164c468ec7abc96ff7646cea3cce6378da2e4aa29c6bcb95@%3Cgithub.arrow.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd2704306ec729ccac726e50339b8a8f079515cc29ccb77713b16e7c5%40%3Cissues.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd2704306ec729ccac726e50339b8a8f079515cc29ccb77713b16e7c5@%3Cissues.hive.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604%40%3Ctorque-dev.db.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd5d58088812cf8e677d99b07f73c654014c524c94e7fedbdee047604@%3Ctorque-dev.db.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd7e12d56d49d73e2b8549694974b07561b79b05455f7f781954231bf%40%3Cdev.pig.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rd7e12d56d49d73e2b8549694974b07561b79b05455f7f781954231bf@%3Cdev.pig.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/re120f6b3d2f8222121080342c5801fdafca2f5188ceeb3b49c8a1d27%40%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/re120f6b3d2f8222121080342c5801fdafca2f5188ceeb3b49c8a1d27@%3Cyarn-issues.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/reebbd63c25bc1a946caa419cec2be78079f8449d1af48e52d47c9e85%40%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/reebbd63c25bc1a946caa419cec2be78079f8449d1af48e52d47c9e85@%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rf00b688ffa620c990597f829ff85fdbba8bf73ee7bfb34783e1f0d4e%40%3Cyarn-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rf00b688ffa620c990597f829ff85fdbba8bf73ee7bfb34783e1f0d4e@%3Cyarn-dev.hadoop.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rf9f0fa84b8ae1a285f0210bafec6de2a9eba083007d04640b82aa625%40%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rf9f0fa84b8ae1a285f0210bafec6de2a9eba083007d04640b82aa625@%3Cissues.geode.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rfc27e2727a20a574f39273e0432aa97486a332f9b3068f6ac1346594%40%3Cdev.myfaces.apache.org%3E"
+            },
+            {
+               "url": "https://lists.apache.org/thread.html/rfc27e2727a20a574f39273e0432aa97486a332f9b3068f6ac1346594@%3Cdev.myfaces.apache.org%3E"
+            },
+            {
+               "url": "https://security.netapp.com/advisory/ntap-20220210-0003/"
+            },
+            {
+               "url": "https://snyk.io/vuln/SNYK-JAVA-COMGOOGLEGUAVA-1015415"
+            },
+            {
+               "url": "https://www.oracle.com//security-alerts/cpujul2021.html"
+            },
+            {
+               "url": "https://www.oracle.com/security-alerts/cpuApr2021.html"
             },
             {
                "url": "https://www.oracle.com/security-alerts/cpuapr2022.html"
@@ -2395,48 +2424,12 @@
                "url": "https://www.oracle.com/security-alerts/cpujan2022.html"
             },
             {
-               "url": "https://www.oracle.com/security-alerts/cpujul2022.html"
-            },
-            {
-               "url": "https://www.zerodayinitiative.com/advisories/ZDI-21-1541/"
-            },
-            {
-               "url": "http://www.openwall.com/lists/oss-security/2021/12/19/1"
+               "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
             }
          ]
       },
       {
-         "id": "64b7146ac98f6e1860dcdb3a",
-         "category": "dependency_scanning",
-         "name": "Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1 With Low Activity Score",
-         "description": "Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1 has a low activity score of 3.54 (<3.90). org.webjars.bowergithub.webcomponents:shadycss@1.9.1 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Unknown",
-         "solution": "Check if the package is unmaintained by reviewing the score factors and decide whether to switch packages.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "org.webjars.bowergithub.webcomponents:shadycss"
-               },
-               "version": "1.9.1"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146ac98f6e1860dcdb3a",
-               "value": "64b7146ac98f6e1860dcdb3a",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146ac98f6e1860dcdb3a"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146af63083e7bf3009fa",
+         "id": "64d3df01f1fbc97820d167d9",
          "category": "dependency_scanning",
          "name": "Dependency org.semver:api@0.9.33 With Low Activity Score",
          "description": "Dependency org.semver:api@0.9.33 has a low activity score of 3.54 (<3.90). org.semver:api@0.9.33 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -2458,20 +2451,20 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146af63083e7bf3009fa",
-               "value": "64b7146af63083e7bf3009fa",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146af63083e7bf3009fa"
+               "name": "EndorLabs-64d3df01f1fbc97820d167d9",
+               "value": "64d3df01f1fbc97820d167d9",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df01f1fbc97820d167d9"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146ca49d5e7c6a41abae",
+         "id": "64d3df01e3ec58e6eade5832",
          "category": "dependency_scanning",
-         "name": "Unused Direct Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1",
-         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.webjars.bowergithub.webcomponents:shadycss@1.9.1, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
+         "name": "Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1 With Low Activity Score",
+         "description": "Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1 has a low activity score of 3.54 (<3.90). org.webjars.bowergithub.webcomponents:shadycss@1.9.1 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "severity": "Unknown",
-         "solution": "Remove org.webjars.bowergithub.webcomponents:shadycss dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "solution": "Check if the package is unmaintained by reviewing the score factors and decide whether to switch packages.",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -2488,135 +2481,15 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146ca49d5e7c6a41abae",
-               "value": "64b7146ca49d5e7c6a41abae",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146ca49d5e7c6a41abae"
+               "name": "EndorLabs-64d3df01e3ec58e6eade5832",
+               "value": "64d3df01e3ec58e6eade5832",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df01e3ec58e6eade5832"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146c4f948c871663d530",
-         "category": "dependency_scanning",
-         "name": "Unused Direct Dependency org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3",
-         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
-         "severity": "Unknown",
-         "solution": "Remove org.webjars.bowergithub.webcomponents:webcomponentsjs dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "org.webjars.bowergithub.webcomponents:webcomponentsjs"
-               },
-               "version": "2.0.0-beta.3"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146c4f948c871663d530",
-               "value": "64b7146c4f948c871663d530",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146c4f948c871663d530"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146cddd812fb9482c9d2",
-         "category": "dependency_scanning",
-         "name": "Unused Direct Dependency com.nqzero:permit-reflect@0.3",
-         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on com.nqzero:permit-reflect@0.3, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
-         "severity": "Unknown",
-         "solution": "Remove com.nqzero:permit-reflect dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "com.nqzero:permit-reflect"
-               },
-               "version": "0.3"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146cddd812fb9482c9d2",
-               "value": "64b7146cddd812fb9482c9d2",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cddd812fb9482c9d2"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146cc98f6e1860dcdb41",
-         "category": "dependency_scanning",
-         "name": "Unused Direct Dependency com.google.errorprone:error_prone_annotations@2.7.1",
-         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on com.google.errorprone:error_prone_annotations@2.7.1, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
-         "severity": "Unknown",
-         "solution": "Remove com.google.errorprone:error_prone_annotations dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "com.google.errorprone:error_prone_annotations"
-               },
-               "version": "2.7.1"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146cc98f6e1860dcdb41",
-               "value": "64b7146cc98f6e1860dcdb41",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cc98f6e1860dcdb41"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146c4f948c871663d532",
-         "category": "dependency_scanning",
-         "name": "Unused Direct Dependency org.jboss.arquillian.config:arquillian-config-spi@1.7.0.Alpha12",
-         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.jboss.arquillian.config:arquillian-config-spi@1.7.0.Alpha12, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
-         "severity": "Unknown",
-         "solution": "Remove org.jboss.arquillian.config:arquillian-config-spi dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "org.jboss.arquillian.config:arquillian-config-spi"
-               },
-               "version": "1.7.0.Alpha12"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146c4f948c871663d532",
-               "value": "64b7146c4f948c871663d532",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146c4f948c871663d532"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146cf63083e7bf300a02",
+         "id": "64d3df14f1fbc97820d16923",
          "category": "dependency_scanning",
          "name": "Unused Direct Dependency org.semver:api@0.9.33",
          "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.semver:api@0.9.33, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
@@ -2638,15 +2511,15 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146cf63083e7bf300a02",
-               "value": "64b7146cf63083e7bf300a02",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cf63083e7bf300a02"
+               "name": "EndorLabs-64d3df14f1fbc97820d16923",
+               "value": "64d3df14f1fbc97820d16923",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df14f1fbc97820d16923"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146cc98f6e1860dcdb43",
+         "id": "64d3df147a977a2134b6298b",
          "category": "dependency_scanning",
          "name": "Unused Direct Dependency org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base@2.0.0",
          "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base@2.0.0, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
@@ -2668,20 +2541,20 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146cc98f6e1860dcdb43",
-               "value": "64b7146cc98f6e1860dcdb43",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cc98f6e1860dcdb43"
+               "name": "EndorLabs-64d3df147a977a2134b6298b",
+               "value": "64d3df147a977a2134b6298b",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df147a977a2134b6298b"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146c0e3bce5358102873",
+         "id": "64d3df147a977a2134b6298e",
          "category": "dependency_scanning",
-         "name": "Outdated Dependency org.mockito:mockito-core@2.28.2",
-         "description": "org.mockito:mockito-core@v2.28.2 is 50 months old and 173 releases behind the latest release v5.0.0.\norg.mockito:mockito-core@2.28.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "name": "Unused Direct Dependency com.nqzero:permit-reflect@0.3",
+         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on com.nqzero:permit-reflect@0.3, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
          "severity": "Unknown",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.mockito:mockito-core version 5.4.0, 5.3.1, 5.3.0, or 5.2.0 (current: 2.28.2, latest: 5.4.0).",
+         "solution": "Remove com.nqzero:permit-reflect dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -2690,28 +2563,118 @@
             "file": "pom.xml",
             "dependency": {
                "package": {
-                  "name": "org.mockito:mockito-core"
+                  "name": "com.nqzero:permit-reflect"
                },
-               "version": "2.28.2"
+               "version": "0.3"
             }
          },
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146c0e3bce5358102873",
-               "value": "64b7146c0e3bce5358102873",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146c0e3bce5358102873"
+               "name": "EndorLabs-64d3df147a977a2134b6298e",
+               "value": "64d3df147a977a2134b6298e",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df147a977a2134b6298e"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146ca49d5e7c6a41abb2",
+         "id": "64d3df14e3ec58e6eade597d",
          "category": "dependency_scanning",
-         "name": "Unmaintained Dependency org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3",
-         "description": "Repository webcomponentsjs is archived for dependency org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3.\norg.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "name": "Unused Direct Dependency org.jboss.arquillian.config:arquillian-config-spi@1.7.0.Alpha12",
+         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.jboss.arquillian.config:arquillian-config-spi@1.7.0.Alpha12, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
          "severity": "Unknown",
-         "solution": "Assess the feasibility of migrating to a maintained software package or self-maintenance with the understanding that this software will no longer make updates available.",
+         "solution": "Remove org.jboss.arquillian.config:arquillian-config-spi dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "org.jboss.arquillian.config:arquillian-config-spi"
+               },
+               "version": "1.7.0.Alpha12"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df14e3ec58e6eade597d",
+               "value": "64d3df14e3ec58e6eade597d",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df14e3ec58e6eade597d"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df1479123a79a6265c6b",
+         "category": "dependency_scanning",
+         "name": "Unused Direct Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1",
+         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.webjars.bowergithub.webcomponents:shadycss@1.9.1, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
+         "severity": "Unknown",
+         "solution": "Remove org.webjars.bowergithub.webcomponents:shadycss dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "org.webjars.bowergithub.webcomponents:shadycss"
+               },
+               "version": "1.9.1"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df1479123a79a6265c6b",
+               "value": "64d3df1479123a79a6265c6b",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df1479123a79a6265c6b"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df14993a0866e307d82e",
+         "category": "dependency_scanning",
+         "name": "Unused Direct Dependency com.google.errorprone:error_prone_annotations@2.7.1",
+         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on com.google.errorprone:error_prone_annotations@2.7.1, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
+         "severity": "Unknown",
+         "solution": "Remove com.google.errorprone:error_prone_annotations dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "com.google.errorprone:error_prone_annotations"
+               },
+               "version": "2.7.1"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df14993a0866e307d82e",
+               "value": "64d3df14993a0866e307d82e",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df14993a0866e307d82e"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df148046d391c0e3ee17",
+         "category": "dependency_scanning",
+         "name": "Unused Direct Dependency org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3",
+         "description": "com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT directly depends on org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3, but it is not reachable.\nThis indicates that the dependency is unused and should be removed.",
+         "severity": "Unknown",
+         "solution": "Remove org.webjars.bowergithub.webcomponents:webcomponentsjs dependency from com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -2728,135 +2691,15 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146ca49d5e7c6a41abb2",
-               "value": "64b7146ca49d5e7c6a41abb2",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146ca49d5e7c6a41abb2"
+               "name": "EndorLabs-64d3df148046d391c0e3ee17",
+               "value": "64d3df148046d391c0e3ee17",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df148046d391c0e3ee17"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146c4f948c871663d536",
-         "category": "dependency_scanning",
-         "name": "License Risk in Dependency org.mockito:mockito-core@2.28.2",
-         "description": "License risk for dependency org.mockito:mockito-core@2.28.2: License information from package manager MIT is different from the licenses discovered in the source code Apache-2.0.\norg.mockito:mockito-core@2.28.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Unknown",
-         "solution": "Review details to decide what to do next.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "org.mockito:mockito-core"
-               },
-               "version": "2.28.2"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146c4f948c871663d536",
-               "value": "64b7146c4f948c871663d536",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146c4f948c871663d536"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146c0e3bce5358102877",
-         "category": "dependency_scanning",
-         "name": "Outdated Dependency net.bytebuddy:byte-buddy-agent@1.9.10",
-         "description": "net.bytebuddy:byte-buddy-agent@byte-buddy-1.9.10 is 52 months old and 75 releases behind the latest release byte-buddy-1.12.22.\nnet.bytebuddy:byte-buddy-agent@1.9.10 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.mockito:mockito-core@2.28.2.",
-         "severity": "Unknown",
-         "solution": "No direct dependency upgrade(s) exist to fix this issue.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "net.bytebuddy:byte-buddy-agent"
-               },
-               "version": "1.9.10"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146c0e3bce5358102877",
-               "value": "64b7146c0e3bce5358102877",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146c0e3bce5358102877"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146cddd812fb9482c9d7",
-         "category": "dependency_scanning",
-         "name": "Missing Source Code Repository for Dependency javax.servlet:javax.servlet-api@3.1.0",
-         "description": "Unable to locate or access the source code for dependency javax.servlet:javax.servlet-api@3.1.0.\njavax.servlet:javax.servlet-api@3.1.0 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Unknown",
-         "solution": "Review details to decide what to do next.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "javax.servlet:javax.servlet-api"
-               },
-               "version": "3.1.0"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146cddd812fb9482c9d7",
-               "value": "64b7146cddd812fb9482c9d7",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cddd812fb9482c9d7"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146cc98f6e1860dcdb49",
-         "category": "dependency_scanning",
-         "name": "Missing Source Code Repository for Dependency org.apache.commons:commons-text@1.9",
-         "description": "Unable to locate or access the source code for dependency org.apache.commons:commons-text@1.9.\norg.apache.commons:commons-text@1.9 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
-         "severity": "Unknown",
-         "solution": "Review details to decide what to do next.",
-         "scanner": {
-            "id": "endorlabs",
-            "name": "Endor Labs dependency scan"
-         },
-         "location": {
-            "file": "pom.xml",
-            "dependency": {
-               "package": {
-                  "name": "org.apache.commons:commons-text"
-               },
-               "version": "1.9"
-            }
-         },
-         "identifiers": [
-            {
-               "type": "endorlabs",
-               "name": "EndorLabs-64b7146cc98f6e1860dcdb49",
-               "value": "64b7146cc98f6e1860dcdb49",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cc98f6e1860dcdb49"
-            }
-         ],
-         "links": []
-      },
-      {
-         "id": "64b7146cddd812fb9482c9da",
+         "id": "64d3df15993a0866e307d82f",
          "category": "dependency_scanning",
          "name": "Unmaintained Dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1",
          "description": "Repository shadycss is archived for dependency org.webjars.bowergithub.webcomponents:shadycss@1.9.1.\norg.webjars.bowergithub.webcomponents:shadycss@1.9.1 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -2878,20 +2721,20 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146cddd812fb9482c9da",
-               "value": "64b7146cddd812fb9482c9da",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cddd812fb9482c9da"
+               "name": "EndorLabs-64d3df15993a0866e307d82f",
+               "value": "64d3df15993a0866e307d82f",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df15993a0866e307d82f"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146cf63083e7bf300a08",
+         "id": "64d3df158046d391c0e3ee18",
          "category": "dependency_scanning",
-         "name": "Outdated Dependency com.google.errorprone:error_prone_annotations@2.7.1",
-         "description": "com.google.errorprone:error_prone_annotations@v2.7.1 is 26 months old and 14 releases behind the latest release v2.18.0.\ncom.google.errorprone:error_prone_annotations@2.7.1 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "name": "Missing Source Code Repository for Dependency org.apache.commons:commons-text@1.9",
+         "description": "Unable to locate or access the source code for dependency org.apache.commons:commons-text@1.9.\norg.apache.commons:commons-text@1.9 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "severity": "Unknown",
-         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use com.google.errorprone:error_prone_annotations version 2.20.0, 2.19.1, 2.19.0, or 2.18.0 (current: 2.7.1, latest: 2.20.0).",
+         "solution": "Review details to decide what to do next.",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -2900,28 +2743,28 @@
             "file": "pom.xml",
             "dependency": {
                "package": {
-                  "name": "com.google.errorprone:error_prone_annotations"
+                  "name": "org.apache.commons:commons-text"
                },
-               "version": "2.7.1"
+               "version": "1.9"
             }
          },
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146cf63083e7bf300a08",
-               "value": "64b7146cf63083e7bf300a08",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146cf63083e7bf300a08"
+               "name": "EndorLabs-64d3df158046d391c0e3ee18",
+               "value": "64d3df158046d391c0e3ee18",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df158046d391c0e3ee18"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146c0e3bce535810287b",
+         "id": "64d3df157a977a2134b62996",
          "category": "dependency_scanning",
-         "name": "Outdated Dependency net.bytebuddy:byte-buddy@1.9.10",
-         "description": "net.bytebuddy:byte-buddy@byte-buddy-1.9.10 is 52 months old and 75 releases behind the latest release byte-buddy-1.12.22.\nnet.bytebuddy:byte-buddy@1.9.10 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.mockito:mockito-core@2.28.2.",
+         "name": "Outdated Dependency org.mockito:mockito-core@2.28.2",
+         "description": "org.mockito:mockito-core@v2.28.2 is 50 months old and 173 releases behind the latest release v5.0.0.\norg.mockito:mockito-core@2.28.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
          "severity": "Unknown",
-         "solution": "No direct dependency upgrade(s) exist to fix this issue.",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use org.mockito:mockito-core version 5.4.0, 5.3.1, 5.3.0, or 5.2.0 (current: 2.28.2, latest: 5.4.0).",
          "scanner": {
             "id": "endorlabs",
             "name": "Endor Labs dependency scan"
@@ -2930,23 +2773,53 @@
             "file": "pom.xml",
             "dependency": {
                "package": {
-                  "name": "net.bytebuddy:byte-buddy"
+                  "name": "org.mockito:mockito-core"
                },
-               "version": "1.9.10"
+               "version": "2.28.2"
             }
          },
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146c0e3bce535810287b",
-               "value": "64b7146c0e3bce535810287b",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146c0e3bce535810287b"
+               "name": "EndorLabs-64d3df157a977a2134b62996",
+               "value": "64d3df157a977a2134b62996",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df157a977a2134b62996"
             }
          ],
          "links": []
       },
       {
-         "id": "64b7146ca49d5e7c6a41abb8",
+         "id": "64d3df15f1fbc97820d16937",
+         "category": "dependency_scanning",
+         "name": "Missing Source Code Repository for Dependency javax.servlet:javax.servlet-api@3.1.0",
+         "description": "Unable to locate or access the source code for dependency javax.servlet:javax.servlet-api@3.1.0.\njavax.servlet:javax.servlet-api@3.1.0 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Unknown",
+         "solution": "Review details to decide what to do next.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "javax.servlet:javax.servlet-api"
+               },
+               "version": "3.1.0"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df15f1fbc97820d16937",
+               "value": "64d3df15f1fbc97820d16937",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df15f1fbc97820d16937"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df15f1fbc97820d1693c",
          "category": "dependency_scanning",
          "name": "Unmaintained Dependency org.semver:api@0.9.33",
          "description": "Repository semantic-versioning is archived for dependency org.semver:api@0.9.33.\norg.semver:api@0.9.33 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
@@ -2968,9 +2841,159 @@
          "identifiers": [
             {
                "type": "endorlabs",
-               "name": "EndorLabs-64b7146ca49d5e7c6a41abb8",
-               "value": "64b7146ca49d5e7c6a41abb8",
-               "url": "https://app.endorlabs.com/t/darren-learn/findings/64b7146ca49d5e7c6a41abb8"
+               "name": "EndorLabs-64d3df15f1fbc97820d1693c",
+               "value": "64d3df15f1fbc97820d1693c",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df15f1fbc97820d1693c"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df15e3ec58e6eade5995",
+         "category": "dependency_scanning",
+         "name": "License Risk in Dependency org.mockito:mockito-core@2.28.2",
+         "description": "License risk for dependency org.mockito:mockito-core@2.28.2: License information from package manager MIT is different from the licenses discovered in the source code Apache-2.0.\norg.mockito:mockito-core@2.28.2 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Unknown",
+         "solution": "Review details to decide what to do next.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "org.mockito:mockito-core"
+               },
+               "version": "2.28.2"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df15e3ec58e6eade5995",
+               "value": "64d3df15e3ec58e6eade5995",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df15e3ec58e6eade5995"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df158046d391c0e3ee30",
+         "category": "dependency_scanning",
+         "name": "Outdated Dependency net.bytebuddy:byte-buddy@1.9.10",
+         "description": "net.bytebuddy:byte-buddy@byte-buddy-1.9.10 is 54 months old and 75 releases behind the latest release byte-buddy-1.12.22.\nnet.bytebuddy:byte-buddy@1.9.10 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.mockito:mockito-core@2.28.2.",
+         "severity": "Unknown",
+         "solution": "No direct dependency upgrade(s) exist to fix this issue.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "net.bytebuddy:byte-buddy"
+               },
+               "version": "1.9.10"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df158046d391c0e3ee30",
+               "value": "64d3df158046d391c0e3ee30",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df158046d391c0e3ee30"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df1679123a79a6265c7f",
+         "category": "dependency_scanning",
+         "name": "Outdated Dependency net.bytebuddy:byte-buddy-agent@1.9.10",
+         "description": "net.bytebuddy:byte-buddy-agent@byte-buddy-1.9.10 is 54 months old and 75 releases behind the latest release byte-buddy-1.12.22.\nnet.bytebuddy:byte-buddy-agent@1.9.10 is a transitive dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT via external direct dependency org.mockito:mockito-core@2.28.2.",
+         "severity": "Unknown",
+         "solution": "No direct dependency upgrade(s) exist to fix this issue.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "net.bytebuddy:byte-buddy-agent"
+               },
+               "version": "1.9.10"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df1679123a79a6265c7f",
+               "value": "64d3df1679123a79a6265c7f",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df1679123a79a6265c7f"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df16993a0866e307d847",
+         "category": "dependency_scanning",
+         "name": "Unmaintained Dependency org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3",
+         "description": "Repository webcomponentsjs is archived for dependency org.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3.\norg.webjars.bowergithub.webcomponents:webcomponentsjs@2.0.0-beta.3 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Unknown",
+         "solution": "Assess the feasibility of migrating to a maintained software package or self-maintenance with the understanding that this software will no longer make updates available.",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "org.webjars.bowergithub.webcomponents:webcomponentsjs"
+               },
+               "version": "2.0.0-beta.3"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df16993a0866e307d847",
+               "value": "64d3df16993a0866e307d847",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df16993a0866e307d847"
+            }
+         ],
+         "links": []
+      },
+      {
+         "id": "64d3df16e3ec58e6eade599e",
+         "category": "dependency_scanning",
+         "name": "Outdated Dependency com.google.errorprone:error_prone_annotations@2.7.1",
+         "description": "com.google.errorprone:error_prone_annotations@v2.7.1 is 26 months old and 14 releases behind the latest release v2.18.0.\ncom.google.errorprone:error_prone_annotations@2.7.1 is a direct dependency of com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT.",
+         "severity": "Unknown",
+         "solution": "Update com.endor.webapp:endor-java-webapp-demo@4.0-SNAPSHOT to use com.google.errorprone:error_prone_annotations version 2.20.0, 2.19.1, 2.19.0, or 2.18.0 (current: 2.7.1, latest: 2.21.1).",
+         "scanner": {
+            "id": "endorlabs",
+            "name": "Endor Labs dependency scan"
+         },
+         "location": {
+            "file": "pom.xml",
+            "dependency": {
+               "package": {
+                  "name": "com.google.errorprone:error_prone_annotations"
+               },
+               "version": "2.7.1"
+            }
+         },
+         "identifiers": [
+            {
+               "type": "endorlabs",
+               "name": "EndorLabs-64d3df16e3ec58e6eade599e",
+               "value": "64d3df16e3ec58e6eade599e",
+               "url": "https://app.endorlabs.com/t/darren-learn/findings/64d3df16e3ec58e6eade599e"
             }
          ],
          "links": []
